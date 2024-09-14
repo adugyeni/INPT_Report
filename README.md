@@ -1,34 +1,23 @@
 # INTERNAL NETWORK PENETRATION TESTING REPORT
-### BY ADU GYENI BENJAMIN
+#### BY ADU GYENI BENJAMIN
 
-#### <span style="color: blue;">TABLE OF CONTENT</span>
+### Table of Contents
+1. [Summary](#summary)
+2. [Testing_Methodogy](#TestingMethodogy)
+3. [Host_Discovery](#HostDiscovery)
+4. [Sevice_Discovery_and_Port_Scanning](#SeviceDiscoveryandPortScanning)
+5. [Web-Based_Attack_Surfaces](#Web-BasedAttackSurfaces)
+6. [Generating_Payloads](#GeneratingPayloads)
+
+# Summary
+An Internal Network Penetration Test was performed on a scope comprising 10.10.10.0/24 and a domain name https://virtualinfosecafrica.com/
 
 
-- [Introduction](#introduction)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+# Testing_Methodogy
+Here’s how to use the project.
 
-## Introduction
-
-Here is an introduction to my project.
-
-## Installation
-
-Instructions for installing the project.
-
-## Usage
-
-How to use the project.
-
-## Contributing
-
-How to contribute to the project.
-
-## License
-
-The project's license.
+# Host Discovery
+<p>Host discovery is a process of finding live hosts on a network. it can be used to narrow down the scope of a network assesment or during security testing. One tool which is mostly used in host discovery is the nmap tool.</p>
 
 
 
