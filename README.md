@@ -24,24 +24,24 @@ Host discovery is a process of finding live hosts on a network. It can be used t
 ![Host Discovery](Images/host_discovery.png)
 
 
-#### Service Discovery And Port Scanning
+### Service Discovery And Port Scanning
 Service discovery and port scanning are essential techniques in network management, security, and administration.
 
-### Service Discovery
+##### Service Discovery
 - **Purpose:** Identifies active services on a network, such as web servers or databases.
 - **Benefits:**
   - **Configuration Management:** Helps administrators verify and manage service configurations.
   - **Troubleshooting:** Assists in diagnosing and resolving network issues by revealing which services are running.
   - **Security:** Aids in identifying potential vulnerabilities by showing what services are exposed and their current state.
 
-#### Port Scanning
+##### Port Scanning
 - **Purpose:** Detects open ports on networked devices, revealing which services are available.
 - **Benefits:**
   - **Network Mapping:** Helps in understanding the network layout and available services.
   - **Security Assessment:** Identifies open ports and services that may be vulnerable, aiding in vulnerability management.
   - **Compliance:** Ensures systems meet security policies and standards by regularly checking for unintended open ports.
 
-#### Combined Use
+##### Combined Use
 - **Enhanced Security:** Together, these techniques provide a comprehensive view of network security, identifying vulnerabilities and ensuring proper configuration.
 - **Efficient Management:** They help in maintaining a secure and well-managed network environment by detecting potential issues early.
   
