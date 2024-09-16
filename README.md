@@ -48,6 +48,12 @@ Service discovery and port scanning are essential techniques in network manageme
 ![Service Discovery and Port Scanning](Images/port_scanning_and_service_discovery.png)
 
 
+### Vulnerability Scanning
+Vulnerability scanning is an automated process that identifies security weaknesses in systems, networks, or applications. It helps detect unpatched software, misconfigurations, and other vulnerabilities that could be exploited. The scanning process involves discovering live hosts, scanning for known issues, analyzing results, and generating reports. Benefits include proactive security, cost-effectiveness, and regulatory compliance, though it may produce false positives or miss some vulnerabilities. Regular vulnerability scanning is essential for maintaining and enhancing overall security.
+
+![Vulnerability Scanning](Images/vulnerability_scanning.png)
+
+
 
   
 
