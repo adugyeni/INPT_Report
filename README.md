@@ -45,7 +45,7 @@ Service discovery and port scanning are essential techniques in network manageme
 - **Enhanced Security:** Together, these techniques provide a comprehensive view of network security, identifying vulnerabilities and ensuring proper configuration.
 - **Efficient Management:** They help in maintaining a secure and well-managed network environment by detecting potential issues early.
   
-![Service Discovery and Port Scanning](Images/port_scanning_and_service_discovery.png)
+![Service Discovery and Port Scanning](Images/sdps.png)
 
 
 ### Vulnerability Scanning
