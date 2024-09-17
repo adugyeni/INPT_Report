@@ -53,7 +53,35 @@ Service discovery and port scanning are essential techniques in network manageme
 
 
 ### Vulnerability Scanning
-Vulnerability scanning is an automated process that identifies security weaknesses in systems, networks, or applications. It helps detect unpatched software, misconfigurations, and other vulnerabilities that could be exploited. The scanning process involves discovering live hosts, scanning for known issues, analyzing results, and generating reports. Benefits include proactive security, cost-effectiveness, and regulatory compliance, though it may produce false positives or miss some vulnerabilities. Regular vulnerability scanning is essential for maintaining and enhancing overall security.
+Vulnerability scanning is an automated process that identifies security weaknesses in systems, networks, or applications. It helps detect unpatched software, misconfigurations, and other vulnerabilities that could be exploited. The scanning process involves discovering live hosts, scanning for known issues, analyzing results, and generating reports. 
+
+
+#### Summary of Findings
+| Finding                                        | Severity |
+|------------------------------------------------|----------|
+| Unauthenticated Remote Code Execution (RCE) | Critical    |
+| Denial of service (DoS)                          | Moderate     |
+|UltraVNC DSM Plugin Local Privilege Escalation                   | High     |
+| Weak Tomcat Authentication and Deployment         | Critical   |
+| Arbitrary Code Execution via Base64 Decoding                         | Critical|
+| Apache Tomcat AJP File Read/Inclusion |Critical  |
+
+#### Detailed Findings
+#### Unauthenticated Remote Code Execution (RCE)
+
+| *Current Rating:* | CVSS Score   |
+|-------------------|--------------|
+|Critical           |   9.8         |
+
+#### Evidence
+This module exploit an unauthenticated RCE vulnerability which 
+  exists in Apache version 2.4.49 (CVE-2021-41773). If files outside 
+  of the document root are not protected by ‘require all denied’ 
+  and CGI has been explicitly enabled, it can be used to execute 
+  arbitrary commands (Remote Command Execution). This vulnerability 
+  has been reintroduced in Apache 2.4.50 fix (CVE-2021-42013).
+
+The image below shows how a custom wordlist can be created using cewl and also procedure used during the vulnerability scanning:
 
 ![Vulnerability Scanning](Images/vulnerability_scanning.png)
 
