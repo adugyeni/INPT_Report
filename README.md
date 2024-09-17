@@ -23,6 +23,9 @@ Host discovery is a process of finding live hosts on a network. It can be used t
 
 ![Host Discovery](Images/host_discovery.png)
 
+The below image is a description of how subdomain enumeration was performed using aiodnsbrute tool
+
+
 
 ### Service Discovery And Port Scanning
 Service discovery and port scanning are essential techniques in network management, security, and administration.
