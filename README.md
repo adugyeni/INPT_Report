@@ -68,8 +68,6 @@ Vulnerability scanning is an automated process that identifies security weakness
 | Unauthenticated Remote Code Execution (RCE) | Critical    |
 | Denial of service (DoS)                          | Moderate     |
 |UltraVNC DSM Plugin Local Privilege Escalation                   | High     |
-| Weak Tomcat Authentication and Deployment         | Critical   |
-| Arbitrary Code Execution via Base64 Decoding                         | Critical|
 | Apache Tomcat AJP File Read/Inclusion |Critical  |
 
 #### Detailed Findings
