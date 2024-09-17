@@ -24,6 +24,7 @@ Host discovery is a process of finding live hosts on a network. It can be used t
 ![Host Discovery](Images/host_discovery.png)
 
 The below image is a description of how subdomain enumeration was performed using aiodnsbrute tool
+![Aiodnsbrute](Images/aiodns.png)
 
 
 
