@@ -147,12 +147,21 @@ CVE-2022-24750	UltraVNC is a free and open source remote pc access software. A v
 #### Affected resouces:
 `10.10.10.50`
 
-
 #### Recommendation
 Upgrade to the latest version preferably version UltraVNC 1.5.0.0
 
+---
 
+###  Apache Tomcat AJP File Read/Inclusion
 
+| *Current Rating:* | CVSS Score   |
+|-------------------|--------------|
+|  Critical        |        9.8  |
+
+Allows attackers to read or include files from the server using the AJP connector, leading to information disclosure and possible RCE. Attackers send crafted AJP messages to the server. Tools like `ajpycat` can exploit this.
+
+#### Evidence
+`Ghostcat` - CVE-2020-193: When using the Apache JServ Protocol (AJP), care must be taken when trusting incoming connections to Apache Tomcat. Tomcat treats AJP connections as having higher trust than, for example, a similar HTTP connection. If such connections are available to an attacker, they can be exploited in ways that may be surprising. In Apache Tomcat 9.0.0.M1 to 9.0.0.30, 8.5.0 to 8.5.50 and 7.0.0 to 7.0.99, Tomcat shipped with an AJP Connector enabled by default that listened on all configured IP addresses. It was expected (and recommended in the security guide) that this Connector would be disabled if not required. This vulnerability report identified a mechanism that allowed: - returning arbitrary files from anywhere in the web application - processing any file in the web application as a JSP Further, if the web application allowed file upload and stored those files within the web application (or the attacker was able to control the content of the web application by some other means) then this, along with the ability to process a file as a JSP, made remote code execution possible. It is important to note that mitigation is only required if an AJP port is accessible to untrusted users. Users wishing to take a defence-in-depth approach and block the vector that permits returning arbitrary files and execution as JSP may upgrade to Apache Tomcat 9.0.31, 8.5.51 or 7.0.100 or later. A number of changes were made to the default AJP Connector configuration in 9.0.31 to harden the default configuration. It is likely that users upgrading to 9.0.31, 8.5.51 or 7.0.100 or later will need to make small changes to their configurations.
 
 
 ### Web-Based Attack Surfaces
@@ -171,6 +180,19 @@ Web-based attack surfaces include web application interfaces, authentication mec
 
 
 ![web attack](Images/was2.png)
+
+
+---
+
+## CVSS v3.0 Reference Table
+| Qualitative Rating | CVSS Score   |
+|--------------------|--------------|
+| None/Informational | N/A          |
+| Low                | 0.1 – 3.9    |
+| Medium             | 4.0 – 6.9    |
+| High               | 7.0 – 8.9    |
+| Critical           | 9.0 – 10.0   |
+
   
 
 
